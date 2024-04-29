@@ -73,7 +73,7 @@ const loginAuthor = async (req, res) => {
 
     const author = await prisma.author.findUnique({
       where: {
-        email:email
+        email
       },
     })
 
